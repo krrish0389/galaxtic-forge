@@ -101,7 +101,7 @@ const Login = () => {
         <div className="text-center lg:text-left space-y-8">
           <div className="space-y-4">
             <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              HackChain
+              MICRO-TIPPING
             </h1>
             <p className="text-xl lg:text-2xl text-muted-foreground">
               The Future of Decentralized Hackathons
