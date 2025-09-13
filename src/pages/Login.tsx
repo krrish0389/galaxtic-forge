@@ -88,66 +88,75 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
+    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden floating-particles">
+      {/* Enhanced Animated Background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-hero">
+        <div className="absolute top-20 left-20 w-80 h-80 bg-primary/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-secondary/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-accent/15 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        <div className="absolute top-40 right-40 w-48 h-48 bg-primary/10 rounded-full blur-2xl animate-pulse delay-3000"></div>
       </div>
 
       <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-8 items-center">
         {/* Hero Section */}
         <div className="text-center lg:text-left space-y-8">
-          <div className="space-y-4">
-            <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <div className="space-y-6">
+            <h1 className="text-6xl lg:text-8xl font-display font-black bg-gradient-primary bg-clip-text text-transparent animate-pulse">
               MICRO-TIPPING
             </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground">
-              The Future of Decentralized Hackathons
+            <p className="text-2xl lg:text-3xl text-foreground/90 font-medium">
+              Next-Generation Professional Platform
             </p>
-            <p className="text-lg text-muted-foreground max-w-md">
-              Join the most innovative hackathon platform where creativity meets blockchain technology. 
-              Build, compete, and earn in the Web3 ecosystem.
+            <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
+              Experience the most advanced, secure, and intuitive platform designed for modern professionals. 
+              Where innovation meets excellence in every interaction.
             </p>
           </div>
 
-          {/* Feature Cards */}
-          <div className="grid grid-cols-2 gap-4 mt-12">
-            <div className="glass p-4 rounded-lg text-center hover-lift">
-              <Shield className="h-8 w-8 mx-auto mb-2 text-primary" />
-              <h3 className="font-semibold">Secure</h3>
-              <p className="text-sm text-muted-foreground">Blockchain-verified submissions</p>
+          {/* Enhanced Feature Cards */}
+          <div className="grid grid-cols-2 gap-6 mt-16">
+            <div className="glass p-6 rounded-2xl text-center hover-lift hover-glow group">
+              <div className="p-3 bg-primary/20 rounded-xl inline-block mb-4 group-hover:bg-primary/30 transition-all">
+                <Shield className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="font-display font-bold text-lg mb-2">Enterprise Security</h3>
+              <p className="text-sm text-muted-foreground">Military-grade encryption</p>
             </div>
-            <div className="glass p-4 rounded-lg text-center hover-lift">
-              <Users className="h-8 w-8 mx-auto mb-2 text-secondary" />
-              <h3 className="font-semibold">Community</h3>
-              <p className="text-sm text-muted-foreground">Global developer network</p>
+            <div className="glass p-6 rounded-2xl text-center hover-lift hover-glow group">
+              <div className="p-3 bg-secondary/20 rounded-xl inline-block mb-4 group-hover:bg-secondary/30 transition-all">
+                <Users className="h-10 w-10 text-secondary" />
+              </div>
+              <h3 className="font-display font-bold text-lg mb-2">Global Network</h3>
+              <p className="text-sm text-muted-foreground">Worldwide collaboration</p>
             </div>
-            <div className="glass p-4 rounded-lg text-center hover-lift">
-              <Trophy className="h-8 w-8 mx-auto mb-2 text-accent" />
-              <h3 className="font-semibold">Rewards</h3>
-              <p className="text-sm text-muted-foreground">Crypto prize pools</p>
+            <div className="glass p-6 rounded-2xl text-center hover-lift hover-glow group">
+              <div className="p-3 bg-accent/20 rounded-xl inline-block mb-4 group-hover:bg-accent/30 transition-all">
+                <Trophy className="h-10 w-10 text-accent" />
+              </div>
+              <h3 className="font-display font-bold text-lg mb-2">Premium Experience</h3>
+              <p className="text-sm text-muted-foreground">Unmatched performance</p>
             </div>
-            <div className="glass p-4 rounded-lg text-center hover-lift">
-              <Zap className="h-8 w-8 mx-auto mb-2 text-warning" />
-              <h3 className="font-semibold">Fast</h3>
-              <p className="text-sm text-muted-foreground">Instant verification</p>
+            <div className="glass p-6 rounded-2xl text-center hover-lift hover-glow group">
+              <div className="p-3 bg-warning/20 rounded-xl inline-block mb-4 group-hover:bg-warning/30 transition-all">
+                <Zap className="h-10 w-10 text-warning" />
+              </div>
+              <h3 className="font-display font-bold text-lg mb-2">Lightning Fast</h3>
+              <p className="text-sm text-muted-foreground">Instant responsiveness</p>
             </div>
           </div>
         </div>
 
-        {/* Login Card */}
-        <div className="w-full max-w-md mx-auto">
-          <Card className="glass border-glass-border shadow-glass">
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl font-bold">
-                {isWalletMode ? 'Connect Wallet' : 'Sign In'}
+        {/* Enhanced Login Card */}
+        <div className="w-full max-w-lg mx-auto">
+          <Card className="glass border-glass-border shadow-elegant hover-lift">
+            <CardHeader className="text-center pb-8">
+              <CardTitle className="text-3xl font-display font-bold">
+                {isWalletMode ? 'Connect Wallet' : 'Professional Access'}
               </CardTitle>
-              <CardDescription>
+              <CardDescription className="text-lg text-muted-foreground">
                 {isWalletMode 
-                  ? 'Connect your Web3 wallet to access HackChain'
-                  : 'Enter your credentials to access your dashboard'
+                  ? 'Secure blockchain authentication'
+                  : 'Enter your professional credentials'
                 }
               </CardDescription>
             </CardHeader>
@@ -273,13 +282,25 @@ const Login = () => {
               </div>
 
               {/* Demo Credentials */}
-              <div className="glass p-4 rounded-lg text-xs space-y-2">
-                <p className="font-semibold text-center mb-2">Demo Credentials:</p>
-                <div className="space-y-1">
-                  <p><span className="text-primary">Admin:</span> admin@hackathon.app / admin123</p>
-                  <p><span className="text-secondary">Participant:</span> participant@hackathon.app / participant123</p>
-                  <p><span className="text-accent">Sponsor:</span> sponsor@hackathon.app / sponsor123</p>
-                  <p><span className="text-destructive">Judge:</span> judge@hackathon.app / judge123</p>
+              <div className="glass p-6 rounded-xl text-sm space-y-3">
+                <p className="font-display font-bold text-center mb-4 text-lg">Demo Access Levels:</p>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-primary font-semibold">Executive:</span>
+                    <span className="text-xs text-muted-foreground">admin@platform.pro / admin123</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-secondary font-semibold">Professional:</span>
+                    <span className="text-xs text-muted-foreground">participant@platform.pro / participant123</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-accent font-semibold">Enterprise:</span>
+                    <span className="text-xs text-muted-foreground">sponsor@platform.pro / sponsor123</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-destructive font-semibold">Specialist:</span>
+                    <span className="text-xs text-muted-foreground">judge@platform.pro / judge123</span>
+                  </div>
                 </div>
               </div>
             </CardContent>

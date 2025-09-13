@@ -162,16 +162,16 @@ const JudgeDashboard = () => {
   const completedSubmissions = submissions.filter(s => s.status !== 'pending');
 
   return (
-    <div className="min-h-screen bg-gradient-background p-8">
+    <div className="min-h-screen bg-gradient-hero floating-particles p-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-8">
+        {/* Enhanced Header */}
+        <div className="flex justify-between items-center mb-10">
           <div>
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-destructive to-destructive-glow bg-clip-text text-transparent">
-              Judge Dashboard
+            <h1 className="text-4xl font-display font-black bg-gradient-to-r from-destructive to-destructive-glow bg-clip-text text-transparent">
+              SPECIALIST CENTER
             </h1>
-            <p className="text-muted-foreground">
-              Review submissions and ensure quality standards
+            <p className="text-lg text-muted-foreground mt-2">
+              Advanced quality assurance and review management
             </p>
           </div>
           <div className="flex space-x-3">

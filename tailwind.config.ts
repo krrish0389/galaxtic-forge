@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Orbitron', 'monospace'],
+        mono: ['Monaco', 'Consolas', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -65,16 +70,19 @@ export default {
         'gradient-secondary': 'var(--gradient-secondary)',
         'gradient-background': 'var(--gradient-background)',
         'gradient-glass': 'var(--gradient-glass)',
+        'gradient-hero': 'var(--gradient-hero)',
       },
       boxShadow: {
         'neon': 'var(--shadow-neon)',
         'purple': 'var(--shadow-purple)',
-        'gold': 'var(--shadow-gold)',
+        'green': 'var(--shadow-green)',
         'glass': 'var(--shadow-glass)',
+        'elegant': 'var(--shadow-elegant)',
       },
       transitionTimingFunction: {
-        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+        'smooth': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
         'bounce': 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+        'elastic': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
       },
       borderRadius: {
         lg: "var(--radius)",

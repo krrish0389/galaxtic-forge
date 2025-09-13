@@ -139,15 +139,15 @@ const SponsorDashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-background">
+    <div className="min-h-screen bg-gradient-hero floating-particles">
       <div className="flex">
-        {/* Sidebar */}
-        <div className="w-64 glass border-r border-glass-border p-6">
-          <div className="mb-8">
-            <h2 className="text-xl font-bold bg-gradient-secondary bg-clip-text text-transparent">
-              Sponsor Hub
+        {/* Enhanced Sidebar */}
+        <div className="w-72 glass border-r border-glass-border p-8">
+          <div className="mb-10">
+            <h2 className="text-2xl font-display font-black bg-gradient-secondary bg-clip-text text-transparent">
+              ENTERPRISE HUB
             </h2>
-            <p className="text-sm text-muted-foreground mt-1">Business Dashboard</p>
+            <p className="text-sm text-muted-foreground mt-2 font-medium">Business Command Center</p>
           </div>
           
           <nav className="space-y-2">
@@ -182,12 +182,14 @@ const SponsorDashboard = () => {
 
         {/* Main Content */}
         <div className="flex-1 p-8">
-          {/* Header */}
-          <div className="flex justify-between items-center mb-8">
+          {/* Enhanced Header */}
+          <div className="flex justify-between items-center mb-10">
             <div>
-              <h1 className="text-3xl font-bold">Sponsor Dashboard</h1>
-              <p className="text-muted-foreground">
-                Create campaigns and engage with the developer community
+              <h1 className="text-4xl font-display font-black bg-gradient-secondary bg-clip-text text-transparent">
+                Enterprise Command Center
+              </h1>
+              <p className="text-lg text-muted-foreground mt-2">
+                Strategic campaign management and community engagement
               </p>
             </div>
             <Button 

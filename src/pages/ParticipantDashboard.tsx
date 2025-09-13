@@ -150,16 +150,16 @@ const ParticipantDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-background p-8">
+    <div className="min-h-screen bg-gradient-hero floating-particles p-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-8">
+        {/* Enhanced Header */}
+        <div className="flex justify-between items-center mb-10">
           <div>
-            <h1 className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Participant Hub
+            <h1 className="text-4xl font-display font-black bg-gradient-primary bg-clip-text text-transparent">
+              PROFESSIONAL HUB
             </h1>
-            <p className="text-muted-foreground">
-              Welcome back, {user?.name}! Ready to compete?
+            <p className="text-lg text-muted-foreground mt-2">
+              Welcome back, {user?.name}! Your workspace awaits.
             </p>
           </div>
           <div className="flex space-x-3">

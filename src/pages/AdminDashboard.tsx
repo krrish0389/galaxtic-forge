@@ -123,15 +123,15 @@ const AdminDashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-background">
+    <div className="min-h-screen bg-gradient-hero floating-particles">
       <div className="flex">
-        {/* Sidebar */}
-        <div className="w-64 glass border-r border-glass-border p-6">
-          <div className="mb-8">
-            <h2 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Control Tower
+        {/* Enhanced Sidebar */}
+        <div className="w-72 glass border-r border-glass-border p-8">
+          <div className="mb-10">
+            <h2 className="text-2xl font-display font-black bg-gradient-primary bg-clip-text text-transparent">
+              CONTROL TOWER
             </h2>
-            <p className="text-sm text-muted-foreground mt-1">Admin Dashboard</p>
+            <p className="text-sm text-muted-foreground mt-2 font-medium">Executive Dashboard</p>
           </div>
           
           <nav className="space-y-2">
@@ -166,12 +166,14 @@ const AdminDashboard = () => {
 
         {/* Main Content */}
         <div className="flex-1 p-8">
-          {/* Header */}
-          <div className="flex justify-between items-center mb-8">
+          {/* Enhanced Header */}
+          <div className="flex justify-between items-center mb-10">
             <div>
-              <h1 className="text-3xl font-bold">Admin Dashboard</h1>
-              <p className="text-muted-foreground">
-                Manage hackathon campaigns and oversee the platform
+              <h1 className="text-4xl font-display font-black bg-gradient-primary bg-clip-text text-transparent">
+                Executive Control Center
+              </h1>
+              <p className="text-lg text-muted-foreground mt-2">
+                Advanced platform management and oversight
               </p>
             </div>
             <div className="flex space-x-3">
